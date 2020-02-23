@@ -1,0 +1,35 @@
+{
+  "name": "coding-lessons",
+  "version": "1.0.0",
+  "description": "Programming lessons for my kids",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "nodemon src/index.ts",
+    "dev": "ts-node-dev --respawn src/index.ts",
+    "build": "tsc -p .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guttih/coding-lessons.git"
+  },
+  "author": "guttin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guttih/coding-lessons/issues"
+  },
+  "homepage": "https://github.com/guttih/coding-lessons#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/cheerio": "^0.22.16",
+    "@types/express": "^4.17.2",
+    "@types/node": "^13.7.4",
+    "nodemon": "^2.0.2",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.5",
+    "ts-node-dev": "^1.0.0-pre.44"
+  }
+}

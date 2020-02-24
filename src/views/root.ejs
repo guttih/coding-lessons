@@ -1,0 +1,11 @@
+<h1>Kennsla</h1>
+<p>Hér má finna þá áfanga sem er að finna á þessum kennsluvef</p>
+
+<ol>
+    <% languages.forEach(item => { %>
+        <li>
+            <h3><a href="<%= item.Url %>"><%= item.Title %></a></h3>
+            <p><%= item.Description %> </p>
+        </li>
+    <% }); %>
+</ol>

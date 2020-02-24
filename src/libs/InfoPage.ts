@@ -1,7 +1,7 @@
 
 type PageRouteInfo = {
-    path: string, 
-    method:string, 
+    path: string,
+    method:string,
     description:string
 };
 
@@ -10,8 +10,8 @@ const pageRouts:PageRouteInfo[] = [
 ];
 
 
-export const MakePage = (title: String, description:String):String => {
-    let styles = `
+export const MakePage = (title: string, description:string):string => {
+    const styles = `
     <style>
         .center          {margin: auto;width: 50%;padding: 10px;}
         .container       {padding-top: 40px; padding-right: 40px; max-width:800px}
@@ -24,7 +24,7 @@ export const MakePage = (title: String, description:String):String => {
         th               {border-bottom: 2px solid gray}
     </style>
 `
-    let html = `
+    const html = `
     <html>
         <head>${styles}</head>
         <body>
@@ -39,13 +39,13 @@ export const MakePage = (title: String, description:String):String => {
     return html;
 }
 
-const makeHref = (path:string, method:string):String => {
+const makeHref = (path:string, method:string):string => {
     return method ==="get" && !path.includes(':')? `<a href="${path}">${path}</a>`:path;
 }
 
-const makeTable = (routes: PageRouteInfo[]):String => {
-    
-    let head = `
+const makeTable = (routes: PageRouteInfo[]):string => {
+
+    const head = `
   <table class="table">
     <thead class="head">
         <tr>
@@ -54,7 +54,7 @@ const makeTable = (routes: PageRouteInfo[]):String => {
         <th>Lýsing</th>
         </tr>
     </thead>
-    
+
     `;
     let body='<tbody>';
     routes.forEach(element => {
@@ -62,7 +62,7 @@ const makeTable = (routes: PageRouteInfo[]):String => {
     });
     body+='</body>';
 
-    let footer = `
+    const footer = `
 </table>`;
     return `${head}${body}${footer}`;
 }

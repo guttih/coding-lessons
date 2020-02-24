@@ -1,0 +1,13 @@
+<h1>Kennsla í JavaScript</h1>
+<p></p>
+
+<ol>
+    <% lessons.forEach(lesson => { %>
+        <li>
+            <h3><a href="<%= lesson.Url %>"><%= lesson.Title %></a></h3>
+            <p><%= lesson.Description %> </p>
+        </li>
+    <% }); %>
+</ol>
+
+<p>Fjöldi kennslustunda: <b><%= lessons.length%></b></p>

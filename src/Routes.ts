@@ -16,7 +16,7 @@ class Routes {
             .get(rootPage);
             app.route('/javascript')
             .get(javascript);
-            
+
         app.route('/api')
             .get((request: Request, response: Response) => {
                 response.status(200)

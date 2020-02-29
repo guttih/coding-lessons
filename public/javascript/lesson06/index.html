@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Lesson 6</title>
+</head>
+<body>
+    <h1>Lesson 6</h1>
+    <p class="description">Hér lærum við að breyta útlit með því að tengja html skránna við css skrá
+        
+    </p>
+    
+    <label for="tala1">Tala 1</label>
+    <input type="number" id="tala1">
+
+    <label for="tala2">Tala 2</label>
+    <input type="number" id="tala2">
+
+    <label for="utkoma">Útkoma</label>
+    <input type="utkoma" id="utkoma" readonly>
+
+    <p>
+        <button class="wipe" onClick="wipe()">C</button>
+        <button class="function" onClick="add()">+</button>
+        <button class="function" onClick="subtract()">-</button>
+        <button class="function" onClick="multiply()">*</button>
+        <button class="function" onClick="devide()">/</button>
+    </p>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

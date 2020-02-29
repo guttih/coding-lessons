@@ -1,0 +1,26 @@
+body {
+    color: rgb(85, 190, 172);
+    background-color: rgb(46, 48, 53);
+}
+
+input{
+    width: 60px;
+    border-radius: 6px;
+}
+
+button {
+    border-radius: 5px;
+    margin-right:20px;
+}
+
+.wipe {
+    color:rgb(85, 190, 172);
+    background-color: tomato;
+    font-weight: 500;
+}
+
+.function {
+    color:tomato;
+    background-color: rgb(85, 190, 172);
+}
+
